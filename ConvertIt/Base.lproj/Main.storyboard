@@ -85,7 +85,7 @@
                                 <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </segmentedControl>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dzy-25-OFy">
-                                <rect key="frame" x="16" y="169" width="304" height="137"/>
+                                <rect key="frame" x="16" y="169" width="343" height="136.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="343" id="kKz-9D-Wec"/>
@@ -109,6 +109,9 @@
                                             <segment title="None"/>
                                         </segments>
                                         <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <action selector="decimalSelected:" destination="BYZ-38-t0r" eventType="valueChanged" id="FDV-7Z-que"/>
+                                        </connections>
                                     </segmentedControl>
                                 </subviews>
                             </stackView>
@@ -140,6 +143,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="decimalSegment" destination="uoy-uX-Avv" id="KPq-kV-4GA"/>
                         <outlet property="formulaPicker" destination="dzy-25-OFy" id="sN4-2D-zwr"/>
                         <outlet property="fromUnitsLabel" destination="m4V-MK-MUI" id="lIa-a7-5Ud"/>
                         <outlet property="resultsLabel" destination="L3y-aI-3iC" id="PUa-fQ-pLB"/>
