@@ -38,8 +38,6 @@ class ViewController: UIViewController {
     var conversionString = ""
     
     
-    
-    
     //MARK: - Class Methods
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -50,7 +48,6 @@ class ViewController: UIViewController {
         fromUnit = unitsArray[0]
         fromUnitsLabel.text = fromUnit
         toUnit = unitsArray[1]
-        
         userInput.becomeFirstResponder()
         signSegment.isHidden = true
     }
